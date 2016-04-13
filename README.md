@@ -27,6 +27,21 @@
 	{"IP": "4.2.103.43", "Time": "0.306944", "Server": "Apache/2.2.25 (Win32) mod_ssl/2.2.25 OpenSSL/0.9.8y mod_jk/1.2.40"}
 ```
 
+* **fabric** - *(Python 2.7)* Fabric input file for multinodes managment.
+
+##### EXAMPLE:
+```
+	root@darkstar:~# fab --skip-bad-hosts command:'uptime'
+	[node1.com] Executing task 'command'
+	Hostname: node1.com
+	[node1.com] sudo: uptime
+	[node1.com] out: sudo password:
+	[node1.com] out: 20:22  up 47 mins, 2 users, load averages: 0,82 1,04 1,10
+	[node1.com] out:
+
+	||| Done.
+```
+
 ### License
 
 **Small Computer Scripts** are published under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
