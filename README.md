@@ -43,6 +43,7 @@
 ```
 
 * **bleachbitch** - *(Python 3.5.1)* Searches for cache, history, logs and temporary files on Linux.
+
 ##### EXAMPLE:
 ```
 	root@darkstar:~# python bleachbitch.py
