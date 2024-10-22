@@ -68,6 +68,36 @@
 	Hidden PIDs: [3860]
 ```
 
+* **sslsrvreaper** - *(Python 3.11.2)* Get domain TLS information from domains.txt.
+
+##### EXAMPLE:
+```
+    root@darkstar:~# cat domains.txt
+    0-1.cloud
+    0-1.ir
+    root@darkstar:~# ./sslsrvreaper.py
+    root@darkstar:~# cat domains.log
+    {
+      "subject_hostName": "0-1.cloud",
+      "subject_hostIP": "185.18.213.82",
+      "subject_commonName": "*.0-1.cloud",
+      "issuer_countryName": "PL",
+      "issuer_organizationName": "Unizeto Technologies S.A.",
+      "issuer_organizationalUnitName": "Certum Certification Authority",
+      "issuer_commonName": "Certum Domain Validation CA SHA2",
+      "version": 3,
+      "serialNumber": "7064FDD670C62CDD5289E98EBF5AACA2",
+      "notBefore": "Aug 26 13:20:32 2024 GMT",
+      "notAfter": "Sep 25 13:20:31 2025 GMT",
+      "subjectAltName": [
+        "*.0-1.cloud",
+        "0-1.cloud"
+      ],
+      "OCSP": "http://dvcasha2.ocsp-certum.com",
+      "caIssuers": "http://repository.certum.pl/dvcasha2.cer",
+      "crlDistributionPoints": "http://crl.certum.pl/dvcasha2.crl"
+    }
+```
 ### License
 
 **Small Computer Scripts** are published under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
