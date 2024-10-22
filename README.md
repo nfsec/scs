@@ -42,6 +42,14 @@
 	||| Done.
 ```
 
+* **bleachbitch** - *(Python 3.5.1)* Searches for cache, history, logs and temporary files on Linux.
+```
+	root@darkstar:~# python bleachbitch.py
+	### Checking:  Links 2 - Web browser
+	~/.links2/links.his - Not Found.
+	~/.links/links.his - FOUND !!!
+```
+
 ### License
 
 **Small Computer Scripts** are published under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
