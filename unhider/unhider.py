@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# -----------------
+# title            : UnHider
+# description      : Show hidden pids in Linux system.
+# author           : Patryk 'agresor' Krawaczynski
+# date             : 22.10.2024
+# version          : 0.2
+# usage            : python3 unhider.py
+# python version   : 3.11.2
+# -----------------
 
 import os
 
