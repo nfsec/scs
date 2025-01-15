@@ -47,7 +47,7 @@ def find_similar_score(entries: list[str]) -> bool:
         query=fqdn,
         choices=entries,
         limit=999999,
-        score_cutoff=90
+        score_cutoff=80
     )
     if not report:
         print(f'INFO: Based on score, no similar phishing domain(s) found.')
