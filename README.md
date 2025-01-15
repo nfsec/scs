@@ -98,6 +98,17 @@
       "crlDistributionPoints": "http://crl.certum.pl/dvcasha2.crl"
     }
 ```
+* **phisherfisher** - *(Python 3.11.2)* Check if phishing domian if known to CERT.pl.
+
+##### EXAMPLE:
+```
+agresor@darkstar:~$ ./phisherfisher allegr00lokalnie.47906408.xyz
+INFO: Based on score, no similar phishing domain(s) found.
+INFO: Based on subdomain charm, no similar phishing domain(s) found
+INFO: Domain charm found 70 similar phishing domain(s). Example:
+      all-egr0lokalnie.52312226.xyz with score 96.55.
+```
+
 ### License
 
 **Small Computer Scripts** are published under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
