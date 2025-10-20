@@ -1,20 +1,4 @@
 ### Small Computer Scripts
-* **pkgkeeper** - *(Python 2.7)* adds or removes packages from hold state with [apt-mark](http://manpages.ubuntu.com/manpages/trusty/en/man8/apt-mark.8.html) tool in Ubuntu using python sets.
-
-##### EXAMPLE:
-```
-	root@darkstar:~# apt-mark showhold
-	python
-	nginx
-	root@darkstar:~# ./pkgkeeper.py apache2 nginx
-	What to add: set(['apache2'])
-	What to remove: set(['python'])
-	What to add: set([])
-	What to remove: set(['python'])
-	root@darkstar:~# apt-mark showhold
-	apache2
-	nginx
-```
 
 * **httpsrvreaper** - *(Python 3.2)* simple HTTP scanner to collect information about "Server" header.
 
@@ -50,22 +34,6 @@
     ### Checking:  Links 2 - Web browser
     ~/.links2/links.his - Not Found.
     ~/.links/links.his - FOUND !!!
-```
-
-* **unhider** - *(Python 3.10.12)* Show hidden PIDs by libprocesshider.so on Linux system .
-
-##### EXAMPLE:
-```
-	root@darkstar:~# ./unhider.py
-	## Hidden PID revealer v0.2 by NFsec.pl
-	
-	Scanning system please wait...
-	
-	PIDs from /proc: [1, 1313, 1983, 1984, 3118, 3119, 3120, 3121, 3124, 3125]
-	
-	PIDs enumerated: [1, 3125, 3146, 3671, 3739, 3759, 3837, 3838, 3860, 3861]
-	
-	Hidden PIDs: [3860]
 ```
 
 * **sslsrvreaper** - *(Python 3.11.2)* Get domain TLS information from domains.txt.
